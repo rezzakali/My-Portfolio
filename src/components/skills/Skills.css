@@ -1,0 +1,108 @@
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+#experienceImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: #1a2c34;
+}
+
+[class^='meter-'] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 70;
+  stroke: rgba(0, 255, 255, 0.452);
+  animation: progress-1 1s ease-out;
+}
+.meter-2 {
+  stroke: rgba(208, 255, 0, 0.445);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  animation: progress-2 0.75s ease-out;
+}
+.meter-3 {
+  stroke: rgba(89, 0, 255, 0.534);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 150;
+  animation: progress-3 0.5s ease-out;
+}
+.meter-4 {
+  stroke: rgb(145, 73, 145);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 170;
+  animation: progress-3 0.5s ease-out;
+}
+.meter-5 {
+  stroke: rgba(0, 238, 255, 0.438);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 200;
+  animation: progress-3 0.5s ease-out;
+}
+.meter-6 {
+  stroke: rgba(0, 255, 128, 0.459);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 300;
+  animation: progress-3 0.5s ease-out;
+}
+
+@keyframes progress-1 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .dashboard {
+    margin-top: 30px;
+  }
+}
+.progress_wrapper {
+  margin-top: 60px;
+}

@@ -1,0 +1,32 @@
+#home {
+  background-color: #0c1222;
+  border: 1px solid #5e678067;
+  border-radius: 4px;
+}
+
+.homeImageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeImageSection img {
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.116);
+  border-radius: 5px;
+  height: 300px;
+}
+.homeAboutSection {
+  text-align: center;
+  margin-top: 80px;
+}
+.brandName {
+  color: coral !important;
+}
+#LearnMoreButton,
+#LearnMoreButton:focus,
+#LearnMoreButton:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
